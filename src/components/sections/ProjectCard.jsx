@@ -47,7 +47,7 @@ const ProjectCard = ({ project, index = 0 }) => {
           to={`/projects/${project.slug}`}
           className="inline-flex items-center gap-2 text-sm font-medium text-primary-light hover:text-white transition-colors group/link"
         >
-          Case Study
+          More
           <FaArrowRight className="group-hover/link:translate-x-1 transition-transform" />
         </Link>
       </div>
