@@ -67,21 +67,4 @@ Your portfolio will be live at `http://localhost:5173`.
 
 Everything shown on the site (name, bio, projects, skills, achievements) is defined in **`src/data/`** — edit those files to make the portfolio yours. No hardcoded content in components.
 
----
 
-## ☁️ Deployment Guide
-
-Since this is a standard Vite React app, deployment is incredibly straightforward:
-
-**Vercel / Netlify / Render**
-1. Connect your GitHub repository to your chosen platform.
-2. The platform will automatically detect Vite.
-3. Build command: `npm run build`
-4. Output directory: `dist`
-5. Deploy!
-
----
-
-## 📄 License
-
-MIT — use this freely for your own portfolio.
