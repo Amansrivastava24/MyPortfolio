@@ -30,7 +30,7 @@ const Home = () => {
         <SectionHeading
           label="Selected Work"
           title="Featured Projects"
-          subtitle="A handful of projects I'm most proud of — full case studies with architecture, challenges, and results."
+          subtitle="A handful of projects I'm most proud of — explore more for architecture, challenges, and results."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featuredProjects.map((project, i) => (
