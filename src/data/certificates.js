@@ -1,0 +1,38 @@
+export const certificates = [
+  {
+    id: 1,
+    title: 'AWS Certified Solutions Architect – Associate',
+    issuer: 'Amazon Web Services',
+    completionDate: '2024-03',
+    credentialId: 'AWS-SAA-9F82D1',
+    credentialUrl: 'https://aws.amazon.com/verification',
+    image: '/certificates/aws-saa.jpg',
+  },
+  {
+    id: 2,
+    title: 'MongoDB Certified Developer Associate',
+    issuer: 'MongoDB University',
+    completionDate: '2023-09',
+    credentialId: 'MDB-DEV-2214A',
+    credentialUrl: 'https://university.mongodb.com/certification',
+    image: '/certificates/mongodb-dev.jpg',
+  },
+  {
+    id: 3,
+    title: 'Meta Front-End Developer Professional Certificate',
+    issuer: 'Meta (via Coursera)',
+    completionDate: '2022-12',
+    credentialId: 'META-FE-77321',
+    credentialUrl: 'https://coursera.org/verify',
+    image: '/certificates/meta-frontend.jpg',
+  },
+  {
+    id: 4,
+    title: 'System Design Fundamentals',
+    issuer: 'Educative',
+    completionDate: '2023-05',
+    credentialId: 'EDU-SD-55210',
+    credentialUrl: 'https://educative.io/certificate',
+    image: '/certificates/system-design.jpg',
+  },
+];
