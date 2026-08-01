@@ -12,7 +12,11 @@ import { skills } from '../data/skills';
 
 const Home = () => {
   const featuredProjects = projects.filter((p) => p.featured).slice(0, 3);
-  const topSkills = skills.filter((s) => s.proficiency >= 88).slice(0, 8);
+  const allowedCategories = ['Programming Languages', 'Frontend', 'Backend', 'Database'];
+  const topSkills = skills
+    .filter((s) => allowedCategories.includes(s.category))
+    .sort((a, b) => b.proficiency - a.proficiency)
+    .slice(0, 8);
 
   return (
     <>
