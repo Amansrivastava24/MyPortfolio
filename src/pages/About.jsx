@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { FaDownload } from 'react-icons/fa';
 import SectionHeading from '../components/ui/SectionHeading';
 import StatsCounter from '../components/sections/StatsCounter';
 import { personalInfo } from '../data/personalInfo';
@@ -45,6 +46,17 @@ const About = () => {
             <p className="text-muted leading-relaxed">{personalInfo.about.journey}</p>
             <div className="glass-card !p-6 border-l-2 border-l-primary">
               <p className="text-sm text-white/80 leading-relaxed italic">{personalInfo.about.objective}</p>
+            </div>
+            <div className="pt-2">
+              <a
+                href={personalInfo.resumeUrl}
+                download="Aman_Srivastava_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline inline-flex items-center gap-2"
+              >
+                <FaDownload /> Download Resume
+              </a>
             </div>
           </motion.div>
         </div>

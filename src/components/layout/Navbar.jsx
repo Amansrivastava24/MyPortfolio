@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { FaDownload } from 'react-icons/fa';
 import { navLinks } from '../../data/navLinks';
 import { socialLinks } from '../../data/socialLinks';
+import { personalInfo } from '../../data/personalInfo';
 import { cn } from '../../utils/cn';
 
 const Navbar = () => {
@@ -79,6 +81,15 @@ const Navbar = () => {
                 <social.icon />
               </a>
             ))}
+            <a
+              href={personalInfo.resumeUrl}
+              download="Aman_Srivastava_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline text-xs px-3.5 py-1.5 flex items-center gap-2"
+            >
+              <FaDownload className="text-xs" /> Resume
+            </a>
           </div>
 
 
@@ -128,12 +139,23 @@ const Navbar = () => {
                 </NavLink>
               </motion.div>
             ))}
-            <div className="flex gap-6 mt-6">
-              {socialLinks.map((social) => (
-                <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="text-2xl text-white/70 hover:text-white">
-                  <social.icon />
-                </a>
-              ))}
+            <div className="flex flex-col items-center gap-4 mt-6">
+              <a
+                href={personalInfo.resumeUrl}
+                download="Aman_Srivastava_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline flex items-center gap-2"
+              >
+                <FaDownload /> Download Resume
+              </a>
+              <div className="flex gap-6 mt-2">
+                {socialLinks.map((social) => (
+                  <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="text-2xl text-white/70 hover:text-white">
+                    <social.icon />
+                  </a>
+                ))}
+              </div>
             </div>
           </motion.div>
         )}

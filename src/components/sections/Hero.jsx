@@ -84,8 +84,14 @@ const Hero = () => {
               </Link>
             </MagneticButton>
             <MagneticButton>
-              <a href={personalInfo.resumeUrl} download className="btn-outline">
-                <FaDownload /> Resume
+              <a
+                href={personalInfo.resumeUrl}
+                download="Aman_Srivastava_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline"
+              >
+                <FaDownload /> Download Resume
               </a>
             </MagneticButton>
 
